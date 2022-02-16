@@ -6,7 +6,7 @@ library(coloc)
 
 #Colocalisation of BIRC6 exon eQTL with invasive bacterial disease association at rs183868412
 d1 <- read.table("exon_birc6.txt", header = T)
-ld <- as.matrix(read.table("ld_for_coloc.txt.gz", row.names = 1, header = T))
+ld <- as.matrix(read.table("ld_for_coloc.txt", row.names = 1, header = T))
 
 eqtl.list <- list(beta = d1$BETA, varbeta = (d1$SE)^2, type = "quant", N = 200, MAF = d1$maf, snp = as.character(d1$SNP), LD=ld)
 gwas.list <- list(beta = d1$gwas.beta, varbeta = (d1$gwas.se)^2, type = "cc", N = 5400, s = 0.479, snp = as.character(d1$SNP), LD=ld)
