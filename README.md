@@ -1,5 +1,7 @@
 # Kenya_bacteraemia_malaria
-**BIRC6 modifies risk of invasive bacterial infection in Kenyan children.**
+**BIRC6 modifies risk of invasive bacterial infection in Kenyan children.** (eLife, 2022)
+https://elifesciences.org/articles/77461
+
 Code and source data for GWAS of invasive bacterial disease in Kenyan children.
 
 **Dataset**
